@@ -4,10 +4,23 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+function creaSaluto (stringa) {
+    return "Ciao " + stringa;        
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
+console.log(creaSaluto (userName));
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+
+// VERSIONE ARROW FUNCTION
+
+// Dichiara la funzione qui.
+const creaSaluto2 = stringa => "Ciao " + stringa;     
+
+// Invoca la funzione qui e stampa il risultato in console
+console.log("Versione arrow function:" , creaSaluto2 (userName));
+
+
+
